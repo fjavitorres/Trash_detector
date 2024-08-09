@@ -23,5 +23,5 @@ The algorithm re-trains the ResNet-18 model by adapting its pre-trained weights 
 6. Use `NET=models/Final_project and DATASET=data/Final_project` to set NET and DATASET for later reference
 7. Transfer the images from the laptop to VS Code.
 8. Navigate into folder `cd jetson-inference/python/training/classification`
-9. Run the model using `imagenet.py --model=$NET/resnet18.onx —-input_blob=input_0 - output_blob=output_0 —-labels=$DATASET/labels.txt input/IMAGE_NAME output/IMAGE_OUTPUT_NAME` Replace IMAGE_NAME with the name of your image and IMAGE_OUTPUT_NAME with the name of what you want the output image to be.
+9. Run the model using `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt input/IMAGE_NAME output/IMAGE_OUTPUT_NAME` Replace IMAGE_NAME with the name of your image and IMAGE_OUTPUT_NAME with the name of what you want the output image to be.
 10. Enjoy running the trash detector model!
